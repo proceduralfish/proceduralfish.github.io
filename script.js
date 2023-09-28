@@ -6,14 +6,22 @@ function openModal() {
     document.body.classList.add("modal-open"); // Add the class
 }
 
-// Function to close the modal when clicking outside
-function closeModal(event) {
-    if (event.target === modal) {
-        modal.style.display = "none";
-        document.body.classList.remove("modal-open"); // Remove the class
-    }
+// Function to close the modal
+function closeModal() {
+    modal.style.display = "none";
+    document.body.classList.remove("modal-open"); // Remove the class
 }
 
+// Event listener to close the modal when clicking outside on desktop
+window.addEventListener("click", function(event) {
+    if (event.target === modal) {
+        closeModal();
+    }
+});
 
-// Event listener to close the modal when clicking outside
-window.addEventListener("click", closeModal);
+// Event listener to close the modal on mobile by tapping outside
+window.addEventListener("touchstart", function(event) {
+    if (event.target === modal) {
+        closeModal();
+    }
+});
