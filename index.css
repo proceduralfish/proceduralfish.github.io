@@ -13,9 +13,8 @@
 /* Styles for the modal content */
 /* Base styles for the modal */
 .modal-content {
-    background-color: rgb(168, 17, 130);
+    background-color: rgb(113, 167, 100);
     width: 80%; /* Set width to 80% of the screen */
-    max-width: 900px; /* Limit maximum width to 900px */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -30,7 +29,7 @@
     .modal-content {
         width: 90%; /* Adjust width for smaller screens */
         max-width: none; /* Remove the maximum width constraint */
-        height: 80vh; /* Set height to 80% of the viewport height */
+        height: 65vh; /* Set height to 80% of the viewport height */
     }
 }
 
