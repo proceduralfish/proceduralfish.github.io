@@ -72,7 +72,7 @@ body.modal-open {
     overflow: hidden;
 }
 
-.project-card-container:hover {
+.project-card-container:hover, .project-card-container:active {
   opacity: 1;
 }
 .project-card-container1 {
