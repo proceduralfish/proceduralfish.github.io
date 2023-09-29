@@ -361,3 +361,10 @@ body.modal-open {
     grid-template-columns: 1fr;
   }
 }
+
+.show-more-text {
+    color: var(--dl-color-gray-white);
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
