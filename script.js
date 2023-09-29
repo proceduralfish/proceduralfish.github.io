@@ -28,9 +28,9 @@ window.addEventListener("click", function (event) {
     }
 });
 
-// // Event listener to close the modal on mobile by tapping outside on mobile
-// window.addEventListener("touchstart", function(event) {
-//     if (event.target === modal) {
-//         closeModal();
-//     }
-// });
+// Event listener to close the modal on mobile by tapping outside on mobile
+window.addEventListener("touchstart", function(event) {
+    if (window.currentModal && event.target === window.currentModal) {
+        closeModal();
+    }
+});
